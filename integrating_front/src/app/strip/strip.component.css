@@ -1,0 +1,191 @@
+/*Info section starts*/
+  
+.member_counter {
+    /* background-image: -webkit-linear-gradient(0deg, #ee390f 0%, #f9b700 100%);*/
+     background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+     padding: 73px 0px 73px;
+     margin-top:5%;
+     cursor: pointer;
+   }
+   .member_counter .single_member_counter span {
+    font-size: 43px;
+    font-weight: 800;
+    color: #fff;
+   /* font-style: "Poppins", sans-serif;
+    */
+    font-family: 'Lemonada', cursive;
+    font-weight:bold;
+    cursor: pointer;
+    }
+.member_counter .single_member_counter span .counter{
+    font-size:43px;
+    transition: font-size 2s .5s ease-in-out;
+    }
+
+.member_counter .single_member_counter span .counter:hover {    
+        font-size:70px;
+    }
+  
+
+   
+   
+   @media (max-width: 576px) {
+     .member_counter {
+       padding: 50px 0px 60px;
+     }
+   }
+   
+   @media only screen and (min-width: 576px) and (max-width: 767px) {
+     .member_counter {
+       padding: 50px 0px 60px;
+     }
+   }
+   
+   @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .member_counter {
+       padding: 50px 0px 60px;
+     }
+   }
+   
+   @media only screen and (min-width: 992px) and (max-width: 1200px) {
+     .member_counter {
+       padding: 73px 0px 73px;
+     }
+   }
+   .member_counter .single_member_counter {
+     text-align: center;
+   }
+   
+   @media (max-width: 576px) {
+     .member_counter .single_member_counter {
+       margin: 20px 0px;
+     }
+   }
+   
+   @media only screen and (min-width: 576px) and (max-width: 767px) {
+     .member_counter .single_member_counter {
+       margin: 20px 0px;
+     }
+   }
+   
+   @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .member_counter .single_member_counter {
+       margin: 20px 0px;
+     }
+   }
+   
+   @media only screen and (min-width: 992px) and (max-width: 1200px) {
+     .member_counter .single_member_counter {
+       margin: 20px 0px;
+     }
+   }
+   
+   .member_counter .single_member_counter img {
+     width: 78px;
+     height: 58px;
+     display: block;
+     margin-bottom: 8px;
+     margin-left: -10px;
+   }
+   
+   
+   
+   @media (max-width: 576px) {
+     .member_counter .single_member_counter span {
+       line-height: 67px;
+       font-size: 35px;
+     }
+   }
+   
+   @media only screen and (min-width: 576px) and (max-width: 767px) {
+     .member_counter .single_member_counter span {
+       line-height: 67px;
+       font-size: 35px;
+     }
+   }
+   
+   @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .member_counter .single_member_counter span {
+       line-height: 67px;
+       font-size: 35px;
+     }
+   }
+   
+   @media only screen and (min-width: 992px) and (max-width: 1200px) {
+     .member_counter .single_member_counter span {
+       line-height: 67px;
+       font-size: 35x;
+     }
+   }
+   
+   .member_counter .single_member_counter h4 {
+     color: #fff;
+     font-size: 24px;
+     font-size: 600;
+     margin-top: 28px;
+     text-transform: capitalize;
+     position: relative;
+     font-family:Arial, Helvetica, sans-serif,cursive;
+   }
+   
+   .member_counter .single_member_counter h4:after {
+     position: absolute;
+     left: 0;
+     top: -20px;
+     right: 0;
+     margin: 0 auto;
+     width: 60px;
+     height: 1px;
+     background-color: #fff;
+     content: "";
+   }
+   
+   @media (max-width: 576px) {
+     .member_counter .single_member_counter h4:after {
+       top: -10px;
+     }
+   }
+   
+   @media only screen and (min-width: 576px) and (max-width: 767px) {
+     .member_counter .single_member_counter h4:after {
+       top: -10px;
+     }
+   }
+   
+   @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .member_counter .single_member_counter h4:after {
+       top: -10px;
+     }
+   }
+   
+   @media only screen and (min-width: 992px) and (max-width: 1200px) {
+     .member_counter .single_member_counter h4:after {
+       top: -10px;
+     }
+   }
+   
+   @media (max-width: 576px) {
+     .member_counter .single_member_counter h4 {
+       margin-top: 10px;
+     }
+   }
+   
+   @media only screen and (min-width: 576px) and (max-width: 767px) {
+     .member_counter .single_member_counter h4 {
+       margin-top: 10px;
+     }
+   }
+   
+   @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .member_counter .single_member_counter h4 {
+       margin-top: 10px;
+     }
+   }
+   
+   @media only screen and (min-width: 992px) and (max-width: 1200px) {
+     .member_counter .single_member_counter h4 {
+       margin-top: 10px;
+     }
+   }
+   
+/*Info section ends*/

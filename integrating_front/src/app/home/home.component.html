@@ -1,0 +1,231 @@
+
+<head>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>  
+  <script type="text/javascript"></script>
+  
+  <script>
+   
+   function viewPassword() {
+    var passwordInput = document.getElementById('password-field');
+    var passStatus = document.getElementById('pass-status');
+
+    if (passwordInput.type == 'password'){
+      passwordInput.type='text';
+      passStatus.className='fa fa-eye-slash';
+
+    }
+    else{
+      passwordInput.type='password';
+      passStatus.className='fa fa-eye';
+    }
+  }
+
+
+  
+
+</script>
+</head>
+<div class="container">
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      
+        <div class="carousel-item active">
+        <img [src]="arr[0]" alt="Los Angeles" width="1100" height="500">
+      </div>
+      
+      <div class="carousel-item">
+        <img [src]="arr[1]" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img [src]="arr[2]"  alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img [src]="arr[3]"  alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img [src]="arr[4]"  alt="New York" width="1100" height="500">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+
+
+<!-- Features -->
+
+
+<section class="feature_part" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3 align-self-center">
+                
+                <div class="single_feature_text ">
+                    <h2 class="feature-class"> Features</h2><hr>
+                    <p class="aboutquality"> We at Indian Hotels are dedicated to provide the best of the services to the 
+                        consumers. We have been rated as one of the best hotels across 10 countries with best
+                        quality food ...
+                    </p>
+                    <a [routerLink]="['/aboutUs']" class="btn_1">
+                        <i>Read More ..</i></a>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="single_feature_icon"><i class=" fa fa-trophy"></i></span>
+                        <h3>Prizes</h3><hr>
+                        <p> 15 Awards for best Quality of food and the Services. 4Awards for best place to work at. 
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="single_feature_icon"><i class="fa fa-taxi"></i></span>
+                        <h3>Shuttle Service</h3><hr>
+                        <p> Our Hotel Provides free shuttle services to the customers.Login to know more information.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part single_feature_part_2">
+                        <span class="single_service_icon style_icon"><i class="fa fa-dollar"></i></span>
+                        <h3>Cost</h3><hr>
+                        <p>We believe in providing the best of the services by minimizing cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  
+  <!-- Info  -->
+ 
+  <!-- Info ends -->
+
+  <!--  Image and About us  -->
+  <section class="container-fluid menu-container">
+        <h1 class="header-bar"> About </h1>
+      
+      
+    <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-5" id="backimg">
+            </div>
+            
+            <div class="col-md-5" >
+                <div class="card shadow-lg2 patch">
+                    <div class="card-header">
+                        <h1 class="text-center"> Indian Hotels </h1>
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        The Indian Hotels Company Limited (IHCL) is an Indian hospitality company that manages a portfolio of hotels, resorts, jungle safaris, palaces, spas and in-flight catering services. It is a subsidiary of the Tata Group conglomerate.
+
+                        IHCL was founded in 1899 by Jamsetji Tata and is headquartered in Mumbai, Maharashtra. It has more than 160 hotels in 80 locations and 17 countries, with over 20,000 rooms and 25,000 employees
+                       </p>
+          
+                    <h4 class="text-uppercase text-center"><span class="underline--magical">CONNECT</span></h4>
+                    			<!-- <button class="btn align-self-center btn-danger">Send Email</button> -->
+                </div>
+                <div class="card-footer">
+                  <div class="text-center social-btn-team">
+                    <a href="https://www.facebook.com/paras.malhotra.5437"><i class="fa fa-facebook-square rounded-circle bg-white mr-2 p-2 "></i></a>
+                    <a href="https://www.linkedin.com/in/paras-malhotra-b775b0128/">
+                      <i class="fa fa-linkedin rounded-circle bg-white mr-2 p-2"></i></a>  
+                    
+                      <i class="fa fa-twitter rounded-circle bg-white mr-2 p-2"></i>
+                      <i class="fa fa-skype rounded-circle bg-white mr-2 p-2"></i>
+                      <a href="https://github.com/parasmalhotra522">
+                        <i class="fa fa-github rounded-circle bg-white mr-2 p-2"></i> </a>
+                      
+                      <hr>
+                </div>
+
+                </div>
+
+              </div>
+            </div>
+            
+  
+            <div class="col-md-1"></div>
+    </div>
+
+    
+
+
+  </section>
+
+
+<app-strip></app-strip>
+  <!-- Image and About us ends -->
+
+<!-- Form starts -->
+
+
+<section id="cover">
+  <div id="cover-caption">
+      <div class="container">
+          <div class="row text-white">
+              <div class="col-xl-5 col-lg-8 col-md-10 col-sm-10 mx-auto  text-center form p-4">
+                  <h1 class="display-4 py-2 text-truncate" id="contact-heading">contact</h1>
+                  <div class="px-2">
+                      <form method="POST" #newmail="ngForm" class="justify-content-center" id="form1">
+                          <div class="form-group">
+                              <label class="sr-only">Name</label>
+                              <input type="text" class="form-control" [(ngModel)]="email" name="email"  id="email" placeholder="Enter your Email">
+                          </div>
+                          <div class="form-group">
+                              <label class="sr-only">Email</label>
+                              
+                              <input type="password" class="form-control" [(ngModel)]="password" name="password"
+                               id="password-field" placeholder="Enter your Password">
+                              
+                                <i id="pass-status" class="fa fa-eye" aria-hidden="true" onclick="viewpassword()"></i>
+
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only">Write a message</label>
+                            <textarea class="form-control" [(ngModel)]="message" name="message"  id="msg" placeholder="Write your message"></textarea>
+                        </div>
+                          
+                        <button type="submit" class="btn button1 btn-lg" (click)="sendEmail()">Send</button>
+                        
+                      </form>
+                      
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Form ends -->
+  

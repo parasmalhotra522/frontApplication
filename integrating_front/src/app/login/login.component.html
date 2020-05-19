@@ -1,0 +1,72 @@
+<div class="container-fluid" id="cover">
+    <div id="cover-caption">
+    <div class="row text-white" >
+        
+        <div class="col-xl-5 col-lg-8 col-md-10 col-sm-10 mx-auto  text-center form p-4">
+            <h1 class="display-4 py-2 text-truncate" id="contact-heading">Log In</h1>
+
+
+
+
+            <div class="px-2">
+            <form #newUserForm="ngForm" (ngSubmit)="onSubmit(newUserForm)"
+                class="justify-content-center"
+            id="form1">
+            <div class="form-group">
+                <label for="name" class="sr-only"> Enter User Name</label>
+                <input type="text" class="form-control"
+                        placeholder="User Name"
+                        required maxlength="25"
+                        minlength="3"
+                        [(ngModel)]="userName" name="userName"
+                        #pickedName="ngModel">
+                <div *ngIf="!pickedName.valid && pickedName.touched"   [ngStyle]="{'border-left':'2px solid red'}" id="err" class="alert alert-danger alert-dismissible">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  User name is required!
+                </div>
+                <div *ngIf="pickedName.errors.minlength" id="err" [ngStyle]="{'border-left':'2px solid red'}" class="alert alert-danger alert-dismissible">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    UserName can't be less than length=3!
+                </div>
+            </div>
+                <!--
+                <input type="email" placeholder="Email"
+                       required [(ngModel)]="email"
+                       name="email" #userEmail="ngModel">
+                <div *ngIf="!userEmail.valid && userEmail.touched">
+                  Email is required!
+                </div>
+              
+                <input type="text" placeholder="Nick name"
+                       [(ngModel)]="nickName" name="nickName">
+            -->
+              <div class="form-group">
+              <label class="sr-only" for="password">Password: </label>
+                <input type="password" class="form-control" placeholder="Password" required
+                       [(ngModel)]="password" name="password"
+                       #userPassword="ngModel">
+                <div *ngIf="!userPassword.valid && userPassword.touched" class="alert alert-danger alert-dismissible" [ngStyle]="{'border-left':'2px solid red'}">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                   
+                  Password is required!
+                </div>
+
+            </div>
+              
+                <button type="submit" 
+                    class=" mr-2 btn button1 btn-lg"
+                [disabled]="!newUserForm.form.valid">
+                  Log In
+                </button>
+                
+             <button type="button" class="ml-4 btn button1 btn-lg" (click)="newUserForm.reset()">Reset</button>
+              
+
+                </form>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+</div>
