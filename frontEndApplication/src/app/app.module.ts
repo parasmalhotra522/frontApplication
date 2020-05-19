@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { AboutusComponent } from './aboutus/aboutus.component';
+//import { FormPoster } from './home/formposterservice';
 
 
 @NgModule({
@@ -13,11 +16,14 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     HomeNavbarComponent,
     HomeFooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

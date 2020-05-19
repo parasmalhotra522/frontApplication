@@ -1,65 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
 
 <div class="container">
-  <h2>Carousel Example</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Los Angeles</h3>
-          <p>LA is always so much fun!</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
-        </div>
-      </div>
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+    </ul>
     
-      <div class="item">
-        <img src="ny.jpg" alt="New York" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
-        </div>
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      
+        <div class="carousel-item active">
+        <img [src]="arr[0]" alt="Los Angeles" width="1100" height="500">
       </div>
-  
+      
+      <div class="carousel-item">
+        <img [src]="arr[1]" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img [src]="arr[2]"  alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img [src]="arr[3]"  alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img [src]="arr[4]"  alt="New York" width="1100" height="500">
+      </div>
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
     </a>
   </div>
 </div>
 
-</body>
-</html>
+
+<!-- Features -->
+
+
+<section class="feature_part" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3 align-self-center">
+                
+                <div class="single_feature_text ">
+                    <h2 class="feature-class"> Features</h2><hr>
+                    <p class="aboutquality"> We at Indian Hotels are dedicated to provide the best of the services to the 
+                        consumers. We have been rated as one of the best hotels across 10 countries with best
+                        quality food ...
+                    </p>
+                    <a [routerLink]="['/aboutUs']" class="btn_1">
+                        <i>Read More ..</i></a>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="single_feature_icon"><i class=" fa fa-trophy"></i></span>
+                        <h3>Prizes</h3><hr>
+                        <p> 15 Awards for best Quality of food and the Services. 4Awards for best place to work at. 
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="single_feature_icon"><i class="fa fa-taxi"></i></span>
+                        <h3>Shuttle Service</h3><hr>
+                        <p> Our Hotel Provides free shuttle services to the customers.Login to know more information.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part single_feature_part_2">
+                        <span class="single_service_icon style_icon"><i class="fa fa-dollar"></i></span>
+                        <h3>Cost</h3><hr>
+                        <p>We believe in providing the best of the services by minimizing cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  
+  <!-- Info  -->
+  
+<section class="member_counter" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single_member_counter">
+                    <span class="counter">{{ info.noHotels }}</span>
+                    <h4>Hotels</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single_member_counter">
+                    <span class="counter">{{info.no_of_countries}}</span>
+                    <h4> Countries </h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single_member_counter">
+                    <span class="counter">{{info.no_of_awards}}</span>
+                    <h4>Awards</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single_member_counter">
+                    <span class="counter">{{info.no_of_staff }}</span>
+                    <h4>Staff Members</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Info ends -->
+
+  <!--  Image and About us  -->
+  <section class="container-fluid menu-container">
+        <h1 class="header-bar"> About </h1>
+      
+      
+    <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-5" id="backimg">
+            </div>
+            
+            <div class="col-md-5" >
+                <div class="card shadow-lg2 patch">
+                    <div class="card-header">
+                        <h1 class="text-center"> Indian Hotels </h1>
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        The Indian Hotels Company Limited (IHCL) is an Indian hospitality company that manages a portfolio of hotels, resorts, jungle safaris, palaces, spas and in-flight catering services. It is a subsidiary of the Tata Group conglomerate.
+
+                        IHCL was founded in 1899 by Jamsetji Tata and is headquartered in Mumbai, Maharashtra. It has more than 160 hotels in 80 locations and 17 countries, with over 20,000 rooms and 25,000 employees
+                       </p>
+          
+                    <h4 class="text-uppercase text-center"><span class="underline--magical">CONNECT</span></h4>
+                    <div class="text-center social-btn-team">
+                    <a href="https://www.facebook.com/paras.malhotra.5437"><i class="fa fa-facebook-square rounded-circle bg-white mr-2 p-2 "></i></a>
+                    <a href="https://www.linkedin.com/in/paras-malhotra-b775b0128/">
+                      <i class="fa fa-linkedin rounded-circle bg-white mr-2 p-2"></i></a>  
+                    
+                      <i class="fa fa-twitter rounded-circle bg-white mr-2 p-2"></i>
+                      <i class="fa fa-skype rounded-circle bg-white mr-2 p-2"></i>
+                      <a href="https://github.com/parasmalhotra522">
+                        <i class="fa fa-github rounded-circle bg-white mr-2 p-2"></i> </a>
+                      
+                      <hr>
+                </div>			<!-- <button class="btn align-self-center btn-danger">Send Email</button> -->
+                </div>
+              </div>
+            </div>
+            
+  
+            <div class="col-md-1"></div>
+    </div>
+
+    
+
+
+  </section>
+
+
+
+  <!-- Image and About us ends -->
+
+
+  <!-- Form -->
+<!--
+<div class="container contactcontainer" id="contact">
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+
+      <div class="col-md-6">
+        <h1 class="getintouch"> Get in Touch with us</h1>
+  
+      <form #form="ngForm" (submit)="formsubmit(form)">
+      
+        <div class="form-group" [class.has-error]="name.touched && (name.invalid || name.dirty)">
+          <input name="name" #name="ngModel" type="text" class="form-control" 
+          required placeholder="Name"  id="fname" 
+          [(ngModel)]='modelData.name' (ngModelChange)='convertUpper($event)'>
+        
+          <span *ngIf="name.invalid && name.touched " id="valid-name"> Name is required</span>
+          
+        </div>
+        
+      <div class="form-group" [class.has-error]="name.touched && (name.invalid)">
+       
+        <input type="text" class="form-control" placeholder="Email" name="email" 
+        id="email" [(ngModel)]="modelData.email" required>
+        <span *ngIf="name.invalid && name.touched " id="valid-name"> Email is required</span>
+        
+      </div>
+   
+      <div class="form-group" [class.has-error]="name.touched && (name.invalid)">
+          <input type="number" class="form-control" placeholder="Mobile Number" name="mobileno"
+          [(ngModel)]="modelData.mobileno" required>    
+          <span *ngIf="name.invalid && name.touched " id="valid-name"> Mobile Number is required</span>
+        
+      </div>
+     
+      <div class="form-group"[class.has-error]="name.touched && (name.invalid)">
+        <input type="text" class="form-control" placeholder="Message" name="message" 
+        [(ngModel)]="modelData.message" required>
+        <span *ngIf="name.invalid && name.touched " id="valid-name"> Message is required</span>
+      
+      </div>
+      
+      <button class="btn btn-success mx-auto d-block  " [disabled]="form.invalid"
+      role="button" >Send</button>
+  
+    </form>
+    
+      this is sample data:  {{modelData | json}}
+      <br>
+      this is the form data value::: {{form.value | json}} 
+  </div>
+  <div class="col-md-3"></div>
+    </div>
+  
+  </div>
+-->
+
+
+  <!-- Form ends -->
+
+
+
+ 

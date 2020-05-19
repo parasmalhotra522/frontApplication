@@ -13,11 +13,12 @@ nav{
 	width: 100%;
 	height: 90px;
 	box-sizing: border-box;
-	transition: .3s;
+	transition: .3s ease-in-out;
+	
 }
 /* color of navbar */
 nav.black{
-	background: rgba(0,0,0,0.9);
+
 	height: 90px;
 }
 /* color of navbar ends*/
@@ -109,7 +110,7 @@ a.navbar-brand span {
 }
 .btn-signin{
 	background-color: #f6f6f6;
-  border: 2px solid #06eb65;
+  	border: 2px solid #06eb65;
   
 }
 .btn-signup{
