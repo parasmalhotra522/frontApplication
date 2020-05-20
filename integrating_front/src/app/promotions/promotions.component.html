@@ -1,0 +1,42 @@
+<!---
+createdAt: "2020-05-20T08:47:42.592Z"
+description: "Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person "
+featured: true
+image: "images/buffet.png"
+label: "New"
+name: "Weekend Grand Buffet"
+price: 1999
+updatedAt: "2020-05-20T08:47:42.592Z"
+__v: 0
+_id: "5ec4eeae61eb7d3300796ab3"
+-->
+<div class="container-fluid"  *ngFor="let promo of promotionsdata">
+    <h1 class="header-bar"> 
+        {{promo.name}}
+    </h1>
+    <div class="row" >
+      <div class="col-md-6">
+        <img src="{{baseURL + promo.image}}"
+            style="width:100%;
+            height:auto;
+            "
+            class="img img-responsive img-fluid img-thumbnail">
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-item">
+                    <b>Name : </b> {{promo.name}}
+                </li>
+                <li class="list-item">
+                    <b>Price :  $ </b> {{promo.price}}
+                 </li>
+                <li class="list-item">
+                    <b>Description : </b> {{promo.description}}
+                </li>
+                 
+                
+            </ul>
+        </div>
+        </div>
+    </div>
+

@@ -4,6 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { DishesComponent } from './dishes/dishes.component';
+import { PromotionsComponent } from './promotions/promotions.component';
+import { LeadersComponent } from './leaders/leaders.component';
 
 
 
@@ -13,6 +16,9 @@ const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path : 'login',component:LoginComponent},
   {path:'aboutus', component:AboutusComponent},
+  {path:'dishes',component:DishesComponent},
+  {path:'promotions',component:PromotionsComponent},
+  {path:'leaders',component:LeadersComponent},
   {path:'**',component:ErrorpageComponent}
   
 ];

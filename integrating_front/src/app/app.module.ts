@@ -11,6 +11,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { StripComponent } from './strip/strip.component';
+import { DishesComponent } from './dishes/dishes.component';
+import { PromotionsComponent } from './promotions/promotions.component';
+import { LeadersComponent } from './leaders/leaders.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { StripComponent } from './strip/strip.component';
     HomeComponent,
     AboutusComponent,
     LoginComponent,
-    StripComponent
+    StripComponent,
+    DishesComponent,
+    PromotionsComponent,
+    LeadersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row" >
+        <div class="col-md-4" *ngFor="let dish of dishess">
+            <div class="card">
+                <div class="card-header">
+                    <a [routerLink]="['dishdetail']">
+                    <img src="{{baseurl + dish.image}}"
+                     class="img img-fluid img-thumbnail img-responsive"
+                    ></a>
+            
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-item text-center" id="dishName"> {{dish.name}} </li>
+                            
+                        <div class="custom-control custom-switch" >
+                            <input type="checkbox" class="custom-control-input" 
+                            id="customSwitches"
+                            (click)="this.check = !this.check">
+                            <label class="custom-control-label" for="customSwitches">
+                                <p [hidden]="!this.check">
+                                    <b>Display the information</b></p></label>
+                          </div>
+
+                        <li class="list-item" [hidden]="this.check" id="body1" >
+                            <b>Category : </b> {{dish.category}} </li>
+                        <li class="list-item" [hidden]="this.check"  >
+                            <b>Price : </b> &#8377; {{dish.price}} </li>
+                        <li class="list-item" [hidden]="this.check" id="description">
+                            <b>Description : </b>{{dish.description}}</li>
+                    </ul>
+
+                </div>
+        </div>
+    </div>
+</div>

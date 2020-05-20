@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+.container { 
+    margin-top: 40px;
+}
+.card {
+    border-radius: 15%;
+    margin:30px;
+    
+}
+img {
+    width:100%;
+    height:200px;
+}
+.card-header{
+    border-radius: 29%;
+    background:pink;
+}
+.card:hover {
+
+    box-shadow:15px 15px 15px;
+    transform:scale(1.05,1.05);
+    -ms-transform: scale(1.05,1.05);
+    -webkit-transform: scale(1.05,1.05);
+    transition:0.5s ease-in-out;
+}
+
+.list-item { 
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.card .card-body #dishName {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size:17px;
+
+}
+/* Rounded sliders */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .card-body .body1 {
+      padding-top:4px;
+      margin-top: 4px;;
+  }
