@@ -16,7 +16,8 @@ export class DishesService {
   constructor(private _http:HttpClient, private _processhttpmessage:ProcessHttpMessageService) { }
 
   getDishes() : Observable<DishInterface[]> {
-    return this._http.get<DishInterface[]>(baseurl+'dishes').pipe(catchError(this._processhttpmessage.handleError));
+    return this._http.get<DishInterface[]>(baseurl+'dishes')
+    .pipe(catchError(this._processhttpmessage.handleError));
   }
 
   getDish(id:string): Observable<DishInterface> {

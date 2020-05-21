@@ -20,6 +20,15 @@ export class DishesComponent implements OnInit {
   check=true;
    
 /*
+
+http Headers => {bearer .......}
+jwt ,checkjwt => {server}
+
+{ "user": "", "pasword":""
+} // checked
+/// working fine
+
+services, http headers, jwt, checkjwt, cors
 dishesss = [
   {_id: ,name:},
   {_id:},

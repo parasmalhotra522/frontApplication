@@ -49,3 +49,8 @@ img {
       padding-top:4px;
       margin-top: 4px;;
   }
+
+
+  [hidden] { 
+      display: none !important;
+    }
