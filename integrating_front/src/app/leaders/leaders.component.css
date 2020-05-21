@@ -54,3 +54,50 @@ img {
     text-align: center;
     font-size:20px;
 }
+
+
+.social-btn-team i{
+	transition: all 0.5s ease;
+	color: #ee5253;
+}
+
+.social-btn-team i:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+  background-image: -webkit-linear-gradient(50deg,#2096ff,#05ffa3)!important;
+	color:black;
+	border-radius:50%;
+	transition: background-color 3s ease-out;
+	border:1px solid #1a2930;
+}
+
+.blog-social i{
+	transition: all 0.5s ease;
+	cursor: pointer;
+	color: #233237;
+	background-color: #fff;
+	font-size: 30px;
+	clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.blog-social i:hover {
+	transition: all 0.5s ease;
+	background-color: #7658F4;
+	color: #A4F3D9;
+	cursor: pointer;
+	transition: background-color 1s ease-out;
+}
+
+.social-btn{
+	color:black;
+}
+
+.social-btn:hover{
+	cursor: pointer;
+	transition: background-color 3s ease-out;
+	/* background: -webkit-linear-gradient(50deg,#45cafc,#303f9f)!important; */
+    /* background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%); */
+	/* color:gray; */
+	/* background-color: rgba(0,0,0,0.3); */
+}
+
